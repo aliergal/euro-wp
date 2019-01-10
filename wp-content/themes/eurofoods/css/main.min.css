@@ -112,11 +112,40 @@ body section.usp {
     body section.usp {
       max-width: 80%; } }
 body section.products .thumbs {
-  padding: 15px; }
+  padding: 15px;
+  position: relative;
+  padding-bottom: 35px; }
   body section.products .thumbs img {
     margin-bottom: 10px; }
     body section.products .thumbs img:hover {
       opacity: 0.6; }
+  body section.products .thumbs .prod-title {
+    font-weight: bold;
+    line-height: 1.5; }
+  body section.products .thumbs .prod-price {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    margin-bottom: 0; }
+    @media screen and (max-width: 480px) {
+      body section.products .thumbs .prod-price {
+        position: relative;
+        left: 0;
+        margin-bottom: inherit; } }
+  body section.products .thumbs .add-to-cart {
+    position: absolute;
+    bottom: 0;
+    right: 15px; }
+    @media screen and (max-width: 480px) {
+      body section.products .thumbs .add-to-cart {
+        position: relative;
+        right: 0; } }
+body section.products .button {
+  display: none; }
+body section.products .thumbs:hover body section.products .thumbs + .button {
+  display: inline-block; }
+body section.products .button:hover {
+  display: inline-block; }
 @media screen and (max-width: 500px) {
   body section.brands {
     max-width: 85%;

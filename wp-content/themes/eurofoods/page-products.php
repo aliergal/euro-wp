@@ -12,5 +12,10 @@
             ?>
             
         </div>
+        <div class="container">
+            <section class="products">
+                <?php print render_product_list(); ?>
+            </section>
+        </div>
         <?php get_template_part( 'template-parts/form-contact' ); ?>
 <?php get_footer(); ?>

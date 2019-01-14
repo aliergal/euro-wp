@@ -155,6 +155,9 @@ body section.products .button:hover {
   body section.brands {
     max-width: 85%;
     margin: auto; } }
+body ul.prodcart {
+  list-style: none;
+  padding-inline-start: 0; }
 
 .page-header {
   background: #f7f6f2;
